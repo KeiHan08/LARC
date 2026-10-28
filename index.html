@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>导言 · 线性代数邪修</title>
+<meta name="description" content="线性代数全书讲义：按教材章节拆解知识点，配通俗讲解、规范证明、分层习题与 MIT 18.06 对照。">
+<link rel="stylesheet" href="assets/katex/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="index">
+<div class="topbar"><div class="topbar__bar" id="readbar"></div></div>
+<div class="mobilebar">
+  <button id="menuBtn">目录</button>
+  <span class="mobilebar__title">导言</span>
+</div>
+<div class="scrim" id="scrim"></div>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="index.html">
+    <span class="brand__mark">A</span>
+    <div class="brand__name">线性代数邪修</div>
+    <div class="brand__sub">Linear Algebra, explained</div>
+    <div class="brand__by">by oublier</div>
+  </a>
+  <div class="navlabel">导言</div>
+  <ul class="navlist">
+    <li><a href="index.html" class="active"><span class="n">≡</span><span>学习指南与课程地图</span></a></li>
+  </ul>
+  <div class="navlabel">各章</div>
+  <ul class="navlist chaps">
+    <li class="chapgroup"><a class="chapgroup__t" href="ch1.html"><span class="n">1</span><span>行列式</span><span class="caret">▾</span></a><div class="chapgroup__b"><a href="ch1.html#m0" data-target="m0"><span class="n">00</span><span>行列式的引入</span><span class="dot"></span></a><div class="navsub"><a href="ch1.html#m0">知识点</a><a href="ch1.html#ex-m0" class="jump">练一练</a></div><a href="ch1.html#m1" data-target="m1"><span class="n">01</span><span>数域</span><span class="dot"></span></a><div class="navsub"><a href="ch1.html#m1">知识点</a><a href="ch1.html#ex-m1" class="jump">练一练</a></div><a href="ch1.html#m2" data-target="m2"><span class="n">02</span><span>排列与逆序数</span><span class="dot"></span></a><div class="navsub"><a href="ch1.html#m2">知识点</a><a href="ch1.html#ex-m2" class="jump">练一练</a></div><a href="ch1.html#m3" data-target="m3"><span class="n">03</span><span>$n$ 阶行列式</span><span class="dot"></span></a><div class="navsub"><a href="ch1.html#m3">知识点</a><a href="ch1.html#ex-m3" class="jump">练一练</a></div><a href="ch1.html#m4" data-target="m4"><span class="n">04</span><span>行列式的性质</span><span class="dot"></span></a><div class="navsub"><a href="ch1.html#m4">知识点</a><a href="ch1.html#ex-m4" class="jump">练一练</a></div><a href="ch1.html#m5" data-target="m5"><span class="n">05</span><span>按行（列）展开</span><span class="dot"></span></a><div class="navsub"><a href="ch1.html#m5">知识点</a><a href="ch1.html#ex-m5" class="jump">练一练</a></div><a href="ch1.html#m6" data-target="m6"><span class="n">06</span><span>九类速算</span><span class="dot"></span></a><div class="navsub"><a href="ch1.html#m6">知识点</a><a href="ch1.html#ex-m6" class="jump">练一练</a></div><a href="ch1.html#m7" data-target="m7"><span class="n">07</span><span>克拉默法则</span><span class="dot"></span></a><div class="navsub"><a href="ch1.html#m7">知识点</a><a href="ch1.html#ex-m7" class="jump">练一练</a></div><a href="ch1.html#exam"><span class="n">★</span><span>巩固练习</span></a></div></li><li class="chapgroup"><a class="chapgroup__t" href="ch2.html"><span class="n">2</span><span>线性方程组</span><span class="caret">▾</span></a><div class="chapgroup__b"><a href="ch2.html#m0" data-target="m0"><span class="n">00</span><span>方程组的几何意义</span><span class="dot"></span></a><div class="navsub"><a href="ch2.html#m0">知识点</a><a href="ch2.html#ex-m0" class="jump">练一练</a></div><a href="ch2.html#m1" data-target="m1"><span class="n">01</span><span>高斯消元法</span><span class="dot"></span></a><div class="navsub"><a href="ch2.html#m1">知识点</a><a href="ch2.html#ex-m1" class="jump">练一练</a></div><a href="ch2.html#m2" data-target="m2"><span class="n">02</span><span>初等行变换与阶梯形</span><span class="dot"></span></a><div class="navsub"><a href="ch2.html#m2">知识点</a><a href="ch2.html#ex-m2" class="jump">练一练</a></div><a href="ch2.html#m3" data-target="m3"><span class="n">03</span><span>矩阵的秩</span><span class="dot"></span></a><div class="navsub"><a href="ch2.html#m3">知识点</a><a href="ch2.html#ex-m3" class="jump">练一练</a></div><a href="ch2.html#m4" data-target="m4"><span class="n">04</span><span>方程组解的判定</span><span class="dot"></span></a><div class="navsub"><a href="ch2.html#m4">知识点</a><a href="ch2.html#ex-m4" class="jump">练一练</a></div><a href="ch2.html#m5" data-target="m5"><span class="n">05</span><span>齐次方程组</span><span class="dot"></span></a><div class="navsub"><a href="ch2.html#m5">知识点</a><a href="ch2.html#ex-m5" class="jump">练一练</a></div><a href="ch2.html#m6" data-target="m6"><span class="n">06</span><span>非齐次解的结构</span><span class="dot"></span></a><div class="navsub"><a href="ch2.html#m6">知识点</a><a href="ch2.html#ex-m6" class="jump">练一练</a></div><a href="ch2.html#m7" data-target="m7"><span class="n">07</span><span>方法与典型题</span><span class="dot"></span></a><div class="navsub"><a href="ch2.html#m7">知识点</a><a href="ch2.html#ex-m7" class="jump">练一练</a></div><a href="ch2.html#exam"><span class="n">★</span><span>巩固练习</span></a></div></li><li class="chapgroup"><a class="chapgroup__t" href="ch3.html"><span class="n">3</span><span>矩阵</span><span class="caret">▾</span></a><div class="chapgroup__b"><a href="ch3.html#m0" data-target="m0"><span class="n">00</span><span>矩阵与线性运算</span><span class="dot"></span></a><div class="navsub"><a href="ch3.html#m0">知识点</a><a href="ch3.html#ex-m0" class="jump">练一练</a></div><a href="ch3.html#m1" data-target="m1"><span class="n">01</span><span>矩阵乘法</span><span class="dot"></span></a><div class="navsub"><a href="ch3.html#m1">知识点</a><a href="ch3.html#ex-m1" class="jump">练一练</a></div><a href="ch3.html#m2" data-target="m2"><span class="n">02</span><span>转置与对称</span><span class="dot"></span></a><div class="navsub"><a href="ch3.html#m2">知识点</a><a href="ch3.html#ex-m2" class="jump">练一练</a></div><a href="ch3.html#m3" data-target="m3"><span class="n">03</span><span>逆矩阵</span><span class="dot"></span></a><div class="navsub"><a href="ch3.html#m3">知识点</a><a href="ch3.html#ex-m3" class="jump">练一练</a></div><a href="ch3.html#m4" data-target="m4"><span class="n">04</span><span>分块矩阵</span><span class="dot"></span></a><div class="navsub"><a href="ch3.html#m4">知识点</a><a href="ch3.html#ex-m4" class="jump">练一练</a></div><a href="ch3.html#m5" data-target="m5"><span class="n">05</span><span>初等变换与初等矩阵</span><span class="dot"></span></a><div class="navsub"><a href="ch3.html#m5">知识点</a><a href="ch3.html#ex-m5" class="jump">练一练</a></div><a href="ch3.html#m6" data-target="m6"><span class="n">06</span><span>等价与标准形</span><span class="dot"></span></a><div class="navsub"><a href="ch3.html#m6">知识点</a><a href="ch3.html#ex-m6" class="jump">练一练</a></div><a href="ch3.html#m7" data-target="m7"><span class="n">07</span><span>方法与典型题</span><span class="dot"></span></a><div class="navsub"><a href="ch3.html#m7">知识点</a><a href="ch3.html#ex-m7" class="jump">练一练</a></div><a href="ch3.html#exam"><span class="n">★</span><span>巩固练习</span></a></div></li><li class="chapgroup"><a class="chapgroup__t" href="ch4.html"><span class="n">4</span><span>线性空间与线性变换</span><span class="caret">▾</span></a><div class="chapgroup__b"><a href="ch4.html#m0" data-target="m0"><span class="n">00</span><span>线性空间定义</span><span class="dot"></span></a><div class="navsub"><a href="ch4.html#m0">知识点</a><a href="ch4.html#ex-m0" class="jump">练一练</a></div><a href="ch4.html#m1" data-target="m1"><span class="n">01</span><span>线性相关与无关</span><span class="dot"></span></a><div class="navsub"><a href="ch4.html#m1">知识点</a><a href="ch4.html#ex-m1" class="jump">练一练</a></div><a href="ch4.html#m2" data-target="m2"><span class="n">02</span><span>极大无关组</span><span class="dot"></span></a><div class="navsub"><a href="ch4.html#m2">知识点</a><a href="ch4.html#ex-m2" class="jump">练一练</a></div><a href="ch4.html#m3" data-target="m3"><span class="n">03</span><span>基与维数</span><span class="dot"></span></a><div class="navsub"><a href="ch4.html#m3">知识点</a><a href="ch4.html#ex-m3" class="jump">练一练</a></div><a href="ch4.html#m4" data-target="m4"><span class="n">04</span><span>子空间</span><span class="dot"></span></a><div class="navsub"><a href="ch4.html#m4">知识点</a><a href="ch4.html#ex-m4" class="jump">练一练</a></div><a href="ch4.html#m5" data-target="m5"><span class="n">05</span><span>解的结构</span><span class="dot"></span></a><div class="navsub"><a href="ch4.html#m5">知识点</a><a href="ch4.html#ex-m5" class="jump">练一练</a></div><a href="ch4.html#m6" data-target="m6"><span class="n">06</span><span>标准正交基</span><span class="dot"></span></a><div class="navsub"><a href="ch4.html#m6">知识点</a><a href="ch4.html#ex-m6" class="jump">练一练</a></div><a href="ch4.html#m7" data-target="m7"><span class="n">07</span><span>线性变换与矩阵</span><span class="dot"></span></a><div class="navsub"><a href="ch4.html#m7">知识点</a><a href="ch4.html#ex-m7" class="jump">练一练</a></div><a href="ch4.html#exam"><span class="n">★</span><span>巩固练习</span></a></div></li><li class="chapgroup"><a class="chapgroup__t" href="ch5.html"><span class="n">5</span><span>特征值与对角化</span><span class="caret">▾</span></a><div class="chapgroup__b"><a href="ch5.html#m0" data-target="m0"><span class="n">00</span><span>特征值与特征向量</span><span class="dot"></span></a><div class="navsub"><a href="ch5.html#m0">知识点</a><a href="ch5.html#ex-m0" class="jump">练一练</a></div><a href="ch5.html#m1" data-target="m1"><span class="n">01</span><span>特征多项式</span><span class="dot"></span></a><div class="navsub"><a href="ch5.html#m1">知识点</a><a href="ch5.html#ex-m1" class="jump">练一练</a></div><a href="ch5.html#m2" data-target="m2"><span class="n">02</span><span>相似矩阵</span><span class="dot"></span></a><div class="navsub"><a href="ch5.html#m2">知识点</a><a href="ch5.html#ex-m2" class="jump">练一练</a></div><a href="ch5.html#m3" data-target="m3"><span class="n">03</span><span>可对角化的条件</span><span class="dot"></span></a><div class="navsub"><a href="ch5.html#m3">知识点</a><a href="ch5.html#ex-m3" class="jump">练一练</a></div><a href="ch5.html#m4" data-target="m4"><span class="n">04</span><span>实对称正交对角化</span><span class="dot"></span></a><div class="navsub"><a href="ch5.html#m4">知识点</a><a href="ch5.html#ex-m4" class="jump">练一练</a></div><a href="ch5.html#m5" data-target="m5"><span class="n">05</span><span>特征值的应用</span><span class="dot"></span></a><div class="navsub"><a href="ch5.html#m5">知识点</a><a href="ch5.html#ex-m5" class="jump">练一练</a></div><a href="ch5.html#m6" data-target="m6"><span class="n">06</span><span>方法与典型题</span><span class="dot"></span></a><div class="navsub"><a href="ch5.html#m6">知识点</a><a href="ch5.html#ex-m6" class="jump">练一练</a></div><a href="ch5.html#exam"><span class="n">★</span><span>巩固练习</span></a></div></li><li class="chapgroup"><a class="chapgroup__t" href="ch6.html"><span class="n">6</span><span>二次型</span><span class="caret">▾</span></a><div class="chapgroup__b"><a href="ch6.html#m0" data-target="m0"><span class="n">00</span><span>二次型与矩阵</span><span class="dot"></span></a><div class="navsub"><a href="ch6.html#m0">知识点</a><a href="ch6.html#ex-m0" class="jump">练一练</a></div><a href="ch6.html#m1" data-target="m1"><span class="n">01</span><span>合同与标准形</span><span class="dot"></span></a><div class="navsub"><a href="ch6.html#m1">知识点</a><a href="ch6.html#ex-m1" class="jump">练一练</a></div><a href="ch6.html#m2" data-target="m2"><span class="n">02</span><span>配方法</span><span class="dot"></span></a><div class="navsub"><a href="ch6.html#m2">知识点</a><a href="ch6.html#ex-m2" class="jump">练一练</a></div><a href="ch6.html#m3" data-target="m3"><span class="n">03</span><span>惯性定理</span><span class="dot"></span></a><div class="navsub"><a href="ch6.html#m3">知识点</a><a href="ch6.html#ex-m3" class="jump">练一练</a></div><a href="ch6.html#m4" data-target="m4"><span class="n">04</span><span>正定二次型</span><span class="dot"></span></a><div class="navsub"><a href="ch6.html#m4">知识点</a><a href="ch6.html#ex-m4" class="jump">练一练</a></div><a href="ch6.html#m5" data-target="m5"><span class="n">05</span><span>方法与典型题</span><span class="dot"></span></a><div class="navsub"><a href="ch6.html#m5">知识点</a><a href="ch6.html#ex-m5" class="jump">练一练</a></div><a href="ch6.html#exam"><span class="n">★</span><span>巩固练习</span></a></div></li>
+  </ul>
+</aside>
+<div class="main">
+<div class="wrap">
+<div class="warnbar" id="warnbar"></div>
+
+<header class="hero">
+  <div class="chaphead__kicker">导言 · 使用说明与课程地图</div>
+  <h1>线性代数邪修</h1>
+  <p class="byline">by oublier</p>
+  <p class="hero__lead">
+    把教材章节拆成可独立消化的最小单元。每个单元先说明该概念<strong>为何需要</strong>，
+    再给出严格定义、定理与<strong>规范证明</strong>，随后是标红的例题，最后配三道由浅入深的习题。
+    每单元末尾附 MIT 18.06 对应讲座与 B 站中文字幕版链接。
+  </p>
+  <div class="hero__stats">
+    <div><div class="stat__n">6</div><div class="stat__l">章 · 对齐陈维新《线性代数》</div></div>
+    <div><div class="stat__n">45</div><div class="stat__l">知识模块</div></div>
+    <div><div class="stat__n">327</div><div class="stat__l">分层习题（含章末练习）</div></div>
+    <div><div class="stat__n">34</div><div class="stat__l">讲 MIT 18.06 对照</div></div>
+  </div>
+</header>
+
+<h2 class="sect-title" id="map">课程地图</h2>
+<p class="sect-sub">按学期进度推进；各章可单独阅读，前向依赖在模块开头标注。</p>
+<ul class="maplist"><a class="mapitem mapitem--live" href="ch1.html"><span class="mapitem__n">01</span><div class="mapitem__b"><div class="mapitem__t">行列式</div><div class="mapitem__d">数域与排列、$n$ 阶行列式的定义、七条性质、按行（列）展开、特殊行列式、克拉默法则。</div></div><span class="mapitem__tag">8 个知识模块 · 57 道分层习题</span></a><a class="mapitem mapitem--live" href="ch2.html"><span class="mapitem__n">02</span><div class="mapitem__b"><div class="mapitem__t">线性方程组</div><div class="mapitem__d">消元法与初等变换、矩阵的秩、齐次与非齐次方程组解的结构、通解写法。</div></div><span class="mapitem__tag">8 个知识模块 · 57 道分层习题</span></a><a class="mapitem mapitem--live" href="ch3.html"><span class="mapitem__n">03</span><div class="mapitem__b"><div class="mapitem__t">矩阵</div><div class="mapitem__d">矩阵运算与分块、逆矩阵、初等变换与初等矩阵、矩阵的等价与等价标准形。</div></div><span class="mapitem__tag">8 个知识模块 · 57 道分层习题</span></a><a class="mapitem mapitem--live" href="ch4.html"><span class="mapitem__n">04</span><div class="mapitem__b"><div class="mapitem__t">线性空间与线性变换</div><div class="mapitem__d">线性空间、基与维数、子空间、解空间、同构、欧氏空间、线性变换的矩阵。</div></div><span class="mapitem__tag">8 个知识模块 · 57 道分层习题</span></a><a class="mapitem mapitem--live" href="ch5.html"><span class="mapitem__n">05</span><div class="mapitem__b"><div class="mapitem__t">特征值与特征向量 · 矩阵对角化</div><div class="mapitem__d">特征多项式、相似对角化、实对称矩阵的正交对角化、Cayley–Hamilton 定理。</div></div><span class="mapitem__tag">7 个知识模块 · 52 道分层习题</span></a><a class="mapitem mapitem--live" href="ch6.html"><span class="mapitem__n">06</span><div class="mapitem__b"><div class="mapitem__t">二次型</div><div class="mapitem__d">配方法、合同变换、惯性定理与规范形、正定性判别。</div></div><span class="mapitem__tag">6 个知识模块 · 47 道分层习题</span></a></ul>
+
+<h2 class="sect-title" id="howto">怎么用这份讲义</h2>
+<p class="sect-sub">两种模式，按复习阶段切换。</p>
+<div class="howto">
+  <div class="howto__c">
+    <span class="k">MODE 1</span>
+    <h4>自学模式</h4>
+    <p>完整内容：直观说明 → 定义与定理 → 规范证明 → 例题 → 习题 → MIT 对照。首轮学习用这个。</p>
+  </div>
+  <div class="howto__c">
+    <span class="k">MODE 2</span>
+    <h4>刷题模式</h4>
+    <p>点击章标题下的按钮，隐藏全部讲解与例题，只留题目。考前复习用，答案可一键展开。</p>
+  </div>
+  <div class="howto__c">
+    <span class="k">NAV</span>
+    <h4>目录两段跳转</h4>
+    <p>侧栏每章可展开；每个知识点下有「知识点 / 练一练」两个入口，复习时直接跳到题。</p>
+  </div>
+  <div class="howto__c">
+    <span class="k">MARK</span>
+    <h4>进度标记</h4>
+    <p>每个模块右上角有「已掌握」，勾选后侧栏出现绿点，状态保存在浏览器本地。</p>
+  </div>
+</div>
+
+<h2 class="sect-title" id="about">关于本讲义</h2>
+<div class="box box--def" style="margin-top:18px">
+  <span class="box__tag">说明</span>
+  <p><strong>知识框架</strong>：按陈维新《线性代数》（第二版，科学出版社）的章节顺序编排，模块题头标注对应教材小节，便于对照上课进度与作业。</p>
+  <p><strong>讲解与习题</strong>：全部重新撰写。目标是「准确 + 可独立消化」：定义与定理采用教材口径的表述，证明给出规范步骤，例题按「造零 / 降阶 / 递推」分类，习题按 ★ / ★★ / ★★★ 三档。</p>
+  <p><strong>MIT 对照</strong>：链接指向 MIT OpenCourseWare 的 18.06 <em>Linear Algebra</em>（Gilbert Strang，2010 春），并附 B 站中文字幕版搜索入口。两套体系顺序不同：18.06 把行列式放在 L18–L20，先讲消元与四个基本子空间；本讲义按教材顺序推进。</p>
+</div>
+
+<h2 class="sect-title" id="res">外部资源</h2>
+<div class="mit" style="margin-top:16px">
+  <div class="mit__head"><span class="mit__logo">MIT</span>18.06 Linear Algebra</div>
+  <ul>
+    <li><a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" target="_blank" rel="noopener">课程主页 · OCW 18.06</a>
+        <span class="note">讲义、习题、考试与全部视频的总入口</span></li>
+    <li><a href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video_galleries/video-lectures/" target="_blank" rel="noopener">视频讲座列表（34 讲）</a>
+        <span class="note">按讲次浏览；每讲都有英文字幕与讲义 PDF</span></li>
+    <li><a href="https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8" target="_blank" rel="noopener">YouTube 播放列表</a>
+        <span class="note">MIT OpenCourseWare 官方频道</span></li>
+    <li class="bili"><a href="https://search.bilibili.com/all?keyword=MIT%2018.06%20%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0" target="_blank" rel="noopener">B 站中文字幕版</a>
+        <span class="note">国内访问更快，搬运版本较多，按播放量挑即可</span></li>
+  </ul>
+</div>
+
+<div class="foot">
+  <span>线性代数邪修 · 依陈维新《线性代数》(第二版) 章节顺序重写讲解，与 MIT 18.06 对照</span>
+  <span>公式渲染 KaTeX · 支持打印</span>
+</div>
+</div>
+</div>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>
